@@ -1,3 +1,17 @@
 {
-    "python.pythonPath": "C:\\Users\\k-ta2\\AppData\\Local\\Programs\\Python\\Python37\\python.exe"
+    "python.pythonPath": "C:\\Users\\k-ta2\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.formatting.provider": "black",
+    "python.linting.flake8Args": [
+        "--max-line-length=120"
+    ],
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "python.formatting.autopep8Args": [
+        "--max-line-length=100"
+        //"--aggressive", "--aggressive",
+    ]
 }
