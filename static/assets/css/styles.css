@@ -707,6 +707,11 @@ a:focus {
   margin-bottom: 60px;
 }
 
+.pricing-section .container .company-information .t-title{
+  color: #a2a6af;
+  background: #55acee;
+}
+
 .pricing-wrapper {
   max-width: 900px;
   margin: 0 auto;
@@ -814,7 +819,6 @@ a:focus {
   margin-bottom: 60px;
   max-width: 800px;
 }
-
 .team-section .profile-image {
   width: 120px;
   height: 120px;
