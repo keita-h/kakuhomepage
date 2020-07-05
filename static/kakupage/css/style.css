@@ -563,10 +563,21 @@ nav ul li a {
   padding-bottom: 10px;
 }
 
-#contact input, #contact textarea {
+#contact .field{
   width: 100%;
 }
 
+#contact input, #contact textarea {
+  width: 100%;
+} 
+
+/* #contact #inp {
+  width: 100%;
+} */
+
+/* #contact #inp-mess {
+  width: 100%;
+} */
 
 #contact  #sendmessage {
   color: #18d26e;
@@ -599,7 +610,9 @@ nav ul li a {
   font-weight: 400;
   font-size: 13px;
 }
-
+#contact #send-message{
+  width: 100%;
+}
 /*-----------------------------------------------------------------------------------*/
 /*  Footer
 /*-----------------------------------------------------------------------------------*/

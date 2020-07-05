@@ -1,13 +1,16 @@
-
 from django.shortcuts import render, redirect
 from .form import ContactForm
 from django.http import HttpResponse
 from django.conf import settings
 from django.core.mail import BadHeaderError, send_mail
+# from django.forms import Form
 # Create your views here.
 
 
 # お問い合わせフォーム画面
+
+
+template_name = "kakupage/kakupage.html"
 
 
 def contact_form(request):
@@ -17,8 +20,7 @@ def contact_form(request):
             # name = form.cleaned_data['name']
             subject = form.cleaned_data['subject']
             message = form.cleaned_data['message']
-            sender = []
-            sender.append(form.cleaned_data['sender'])
+            sender = form.cleaned_data['sender']
             myself = form.cleaned_data['myself']
             recipients = [settings.EMAIL_HOST_USER]
 
