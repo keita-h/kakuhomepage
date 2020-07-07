@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .form import ContactForm
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.conf import settings
 from django.core.mail import BadHeaderError, send_mail
 # from django.forms import Form
@@ -13,7 +13,7 @@ from django.core.mail import BadHeaderError, send_mail
 template_name = "kakupage/kakupage.html"
 
 
-def contact_form(request):
+def kaku_contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
@@ -21,18 +21,19 @@ def contact_form(request):
             subject = form.cleaned_data['subject']
             message = form.cleaned_data['message']
             sender = form.cleaned_data['sender']
-            myself = form.cleaned_data['myself']
+            # myself = form.cleaned_data['myself']
             recipients = [settings.EMAIL_HOST_USER]
 
-            if myself:
-                recipients.append(sender)
+            # if myself:
+            recipients.append(sender)
             try:
                 send_mail(subject, message, sender, recipients)
 
             except BadHeaderError:
                 return HttpResponse('無効なヘッダーが見つかりました。')
-            # return render(request, 'kakupage/complete.html')
             return redirect('kakupage:complete')
+            # return render(request, 'kakupage/complete.html')
+            # return HttpResponseRedirect('check/complete/')
 
     else:
         form = ContactForm()
@@ -44,3 +45,4 @@ def contact_form(request):
 
 def complete(request):
     return render(request, 'kakupage/complete.html')
+    # return redirect('kakupage:complete')
