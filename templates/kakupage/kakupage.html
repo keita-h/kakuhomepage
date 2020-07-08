@@ -221,6 +221,13 @@
                                 <button type="submit" class="btn btn-defeault btn-send" id="send-message">Send
                                     message</button>
                             </a>
+                            <!-- {{ fi.help_text|safe }} -->
+                            {% for field in form %}
+                            {% if field.help_text %}
+                            <p class="help" id="errormessage">{{ field.help_text|safe }}
+                            <p>
+                                {% endif %}
+                                {% endfor %}
                         </form>
                         <!-- <div class="field">
 
