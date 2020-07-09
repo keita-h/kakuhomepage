@@ -44,5 +44,7 @@ def kaku_contact(request):
 
 
 def complete(request):
-    return render(request, 'kakupage/complete.html')
+    template_name = 'kakupage\complete.html'
+    return render(request, template_name)
     # return redirect('kakupage:complete')
+    # return template_name

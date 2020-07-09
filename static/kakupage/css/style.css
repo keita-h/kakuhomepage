@@ -590,9 +590,9 @@ nav ul li a {
 }
 
 #contact  #errormessage {
-  color: red;
+  color: greenyellow;
   display: none;
-  border: 1px solid red;
+  border: 1px solid greenyellow;
   text-align: center;
   padding: 15px;
   font-weight: 600;
