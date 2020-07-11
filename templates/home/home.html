@@ -4,7 +4,7 @@
 <html lang="ja">
 
 <head>
-    <title>Bootstrap 4 theme for developers and startups</title>
+    <title>DeshioCorporation Home</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,6 +56,7 @@
                     </ul>
                     <!--//nav-->
                 </div>
+
                 <!--//navabr-collapse-->
             </nav>
             <!--//main-nav-->
@@ -161,6 +162,7 @@
     </div>
     <!--//hero-->
 
+    {% block body %}
     <div id="about" class="about-section">
         <div class="container text-center">
             <h2 class="section-title">なぜ私たちの製品が選ばれるか？</h2>
@@ -315,82 +317,6 @@
             </h2>
             <p class="intro">過去でもなく未来でもない今の世の中を全力で生き抜くため、私たちは今全力でできることを皆さんに提供することを目標にしています。</p>
 
-            <!-- <div class="tabbed-area row">
-
-                
-                <div class="feature-nav nav nav-pill flex-column col-lg-4 col-md-6 col-12 order-0 order-md-1"
-                    role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active mb-lg-3" href="#feature-1" aria-controls="feature-1" data-toggle="pill"
-                        role="tab" aria-selected="true"><i class="fas fa-magic mr-2"></i>20+ Use Case-based App
-                        Pages</a>
-                    <a class="nav-link mb-lg-3" href="#feature-2" aria-controls="feature-2" data-toggle="pill"
-                        role="tab" aria-selected="false"><i class="fas fa-cubes mr-2"></i>100+ Components and
-                        Widgets</a>
-                    <a class="nav-link mb-lg-3" href="#feature-3" aria-controls="feature-3" data-toggle="pill"
-                        role="tab" aria-selected="false"><i class="fas fa-chart-bar mr-2"></i>Useful Chart Libraries</a>
-                    <a class="nav-link mb-lg-3" href="#feature-4" aria-controls="feature-4" data-toggle="pill"
-                        role="tab" aria-selected="false"><i class="fas fa-code mr-2"></i>Valid HTML5 + CSS3</a>
-                    <a class="nav-link mb-lg-3" href="#feature-5" aria-controls="feature-5" data-toggle="pill"
-                        role="tab" aria-selected="false"><i class="fas fa-rocket mr-2"></i>Built on Bootstrap 4 &amp;
-                        SCSS</a>
-                    <a class="nav-link mb-lg-3" href="#feature-6" aria-controls="feature-6" data-toggle="pill"
-                        role="tab" aria-selected="false"><i class="fas fa-mobile-alt mr-2"></i>Fully Responsive</a>
-                    <a class="nav-link mb-lg-3" href="#feature-7" aria-controls="feature-7" data-toggle="pill"
-                        role="tab" aria-selected="false"><i class="fas fa-star mr-2"></i>Beautiful UI</a>
-                    <a class="nav-link mb-lg-3" href="#feature-8" aria-controls="feature-8" data-toggle="pill"
-                        role="tab" aria-selected="false"><i class="fas fa-heart mr-2"></i>Free Updates &amp; Support</a>
-                </div>
-
-               
-                <div class="feature-content tab-content col-lg-8 col-md-6 col-12 order-1 order-md-0">
-                    <div role="tabpanel" class="tab-pane fade show active" id="feature-1">
-                        <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/"
-                            target="_blank"><img class="img-fluid" src="{% static 'assets/images/feature-1.png' %}"
-                                alt="screenshot"></a>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="feature-2">
-                        <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/"
-                            target="_blank"><img class="img-fluid" src="{% static 'assets/images/feature-2.png' %}"
-                                alt="screenshot"></a>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="feature-3">
-                        <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/"
-                            target="_blank"><img class="img-fluid" src="{% static 'assets/images/feature-3.png' %}"
-                                alt="screenshot"></a>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="feature-4">
-                        <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/"
-                            target="_blank"><img class="img-fluid" src="{% static 'assets/images/feature-4.png' %}"
-                                alt="screenshot"></a>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="feature-5">
-                        <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/"
-                            target="_blank"><img class="img-fluid" src="{% static 'assets/images/feature-5.png' %}"
-                                alt="screenshot"></a>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="feature-6">
-                        <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/"
-                            target="_blank"><img class="img-fluid" src="{% static 'assets/images/feature-6.png' %}"
-                                alt="screenshot"></a>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="feature-7">
-                        <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/"
-                            target="_blank"><img class="img-fluid" src="{% static 'assets/images/feature-7.png' %}"
-                                alt="screenshot"></a>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="feature-8">
-                        <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/"
-                            target="_blank"><img class="img-fluid" src="{% static 'assets/images/feature-8.png' %}"
-                                alt="screenshot"></a>
-                    </div>
-
-                </div>
-                
-
-
-            </div> -->
-            <!--//tabbed-area-->
-
         </div>
         <!--//container-->
     </div>
@@ -448,6 +374,14 @@
                     <td>でしおコーポレーション</td>
                 </tr>
                 <tr>
+                    <td bgcolor="#a2a6af">代表取締役社長</td>
+                    <td>デデデ・でしお</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#a2a6af">資本金</td>
+                    <td>300円</td>
+                </tr>
+                <tr>
                     <td bgcolor="#a2a6af">従業員数</td>
                     <td>10名</td>
                 </tr>
@@ -479,18 +413,18 @@
                 <p>こちらのボタンから問い合わせページに飛んでください。</p>
                 <p>大事なことも書いてありますのでご確認ください。</p>
             </div>
-            <a class="btn btn-cta btn-primary" href="{% url 'contact' %}">Go!</a>
+            <a class="btn btn-cta btn-primary" href="{% url 'contact:contact' %}">Go!</a>
 
         </div>
         <!--//container-->
     </div>
     <!--//contact-section-->
-
+    {% endblock body %}
     <footer class="footer text-center">
         <div class="container">
             <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-            <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a
-                    href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
+            <small class="copyright">2020 DeshioCorporation by <a href="https://themes.3rdwavemedia.com/"
+                    target="_blank">Xiaoying Riley</a> for developers</small>
 
 
         </div>

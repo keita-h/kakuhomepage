@@ -12,3 +12,6 @@ class Contactus(models.Model):
 
     class Meta:
         verbose_name_plural = "Contact Us"
+
+    # def kakucontact(self):
+    #     return self.Meta

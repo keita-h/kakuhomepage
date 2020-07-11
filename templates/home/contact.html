@@ -1,0 +1,27 @@
+{% extends 'home/home.html' %}
+
+{% load static %}
+
+{% block body %}
+<center>
+    <div id="about" class="about-section">
+        <div class="container text-center">
+            <div class="container">
+
+                <div class="col-md-8">
+                    <h2>この会社は噓で～す</h2>
+                    <p>私はRPAエンジニアをしているものです。他にも機械学習モデルの作成などにも手掛けています。何か仕事の依頼がある人は下からの連絡お願いします。</p>
+                    <p>お問い合わせフォームです。</p>
+                    <form method="POST">{% csrf_token %}
+                        {{ form.as_p }}
+                        <a href="{% url 'home-name'%}">
+                            <button type="submit" class="btn btn-primary">送信</button>
+                        </a>
+                    </form>
+                    <!-- </center> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
+{% endblock body %}

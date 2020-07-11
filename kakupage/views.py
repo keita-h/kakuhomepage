@@ -10,7 +10,7 @@ from django.core.mail import BadHeaderError, send_mail
 # お問い合わせフォーム画面
 
 
-template_name = "kakupage/kakupage.html"
+template_name = "home/contact.html"
 
 
 def kaku_contact(request):
@@ -44,7 +44,7 @@ def kaku_contact(request):
 
 
 def complete(request):
-    template_name = 'kakupage\complete.html'
+    template_name = 'kakupage/complete.html'
     return render(request, template_name)
     # return redirect('kakupage:complete')
     # return template_name
