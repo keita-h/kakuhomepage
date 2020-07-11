@@ -25,6 +25,8 @@ body {
   -o-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -455,13 +457,13 @@ nav ul li a {
 
 
 #journal, #slideshow {
+  text-align: center;
   position: relative; 
-  width:  510px; /* 画像の横幅に合わせて記述 */
-  height: 310px; /* 画像の高さに合わせて記述 */
+  width:  70vw; /* 画像の横幅に合わせて記述 */
+  height: 40vw; /* 画像の高さに合わせて記述 */
   top: 0;
   left:0;
   margin: 0 auto;
-  text-align: center;
 }
 #journal,#slideshow img {
   position: absolute;
@@ -471,6 +473,8 @@ nav ul li a {
   opacity: 0.0;
   margin: 0 auto;
   text-align: center;
+  width: 69vw;
+  height: 39vw;
 }
 #journal,#slideshow img.active {
   z-index: 10;
