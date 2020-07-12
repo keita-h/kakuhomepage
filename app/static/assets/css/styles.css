@@ -692,6 +692,7 @@ a:focus {
   padding-bottom: 90px;
 }
 
+
 .pricing-section .section-title {
   margin: 0;
   margin-bottom: 15px;
@@ -791,6 +792,8 @@ a:focus {
 .pricing-wrapper a.btn:hover {
   background: rgba(0, 0, 0, 0.4);
 }
+
+
 
 /* ======= Team Section ======= */
 .team-section {
@@ -1071,4 +1074,21 @@ a:focus {
     bottom: 0;
     top: inherit;
   }
+}
+.contact-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.contact-section_2 h2{
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 30px; 
+}
+
+.contact-section_2 .col-md-10{
+  text-align: center;
+  margin: 0 auto;
 }
